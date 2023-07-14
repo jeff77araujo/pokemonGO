@@ -17,6 +17,10 @@
 		D04DBB802A55FBC800D3C10A /* PokemonGOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DBB7F2A55FBC800D3C10A /* PokemonGOTests.swift */; };
 		D04DBB8A2A55FBC900D3C10A /* PokemonGOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DBB892A55FBC900D3C10A /* PokemonGOUITests.swift */; };
 		D04DBB8C2A55FBC900D3C10A /* PokemonGOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DBB8B2A55FBC900D3C10A /* PokemonGOUITestsLaunchTests.swift */; };
+		D04DBB9A2A5737C000D3C10A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04DBB992A5737C000D3C10A /* MapKit.framework */; };
+		D04DBB9C2A58490500D3C10A /* CoreDataPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DBB9B2A58490500D3C10A /* CoreDataPokemon.swift */; };
+		D04DBB9E2A58774900D3C10A /* PokemonAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DBB9D2A58774900D3C10A /* PokemonAnnotation.swift */; };
+		D04DBBA02A5C793E00D3C10A /* PokeDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DBB9F2A5C793E00D3C10A /* PokeDexViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		D04DBB852A55FBC900D3C10A /* PokemonGOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonGOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04DBB892A55FBC900D3C10A /* PokemonGOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGOUITests.swift; sourceTree = "<group>"; };
 		D04DBB8B2A55FBC900D3C10A /* PokemonGOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D04DBB992A5737C000D3C10A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D04DBB9B2A58490500D3C10A /* CoreDataPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPokemon.swift; sourceTree = "<group>"; };
+		D04DBB9D2A58774900D3C10A /* PokemonAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAnnotation.swift; sourceTree = "<group>"; };
+		D04DBB9F2A5C793E00D3C10A /* PokeDexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04DBB9A2A5737C000D3C10A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,7 @@
 				D04DBB7E2A55FBC800D3C10A /* PokemonGOTests */,
 				D04DBB882A55FBC900D3C10A /* PokemonGOUITests */,
 				D04DBB632A55FBC700D3C10A /* Products */,
+				D04DBB982A5737C000D3C10A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,11 +114,14 @@
 				D04DBB652A55FBC700D3C10A /* AppDelegate.swift */,
 				D04DBB672A55FBC700D3C10A /* SceneDelegate.swift */,
 				D04DBB692A55FBC700D3C10A /* ViewController.swift */,
+				D04DBB9F2A5C793E00D3C10A /* PokeDexViewController.swift */,
 				D04DBB6B2A55FBC700D3C10A /* Main.storyboard */,
 				D04DBB712A55FBC800D3C10A /* Assets.xcassets */,
 				D04DBB732A55FBC800D3C10A /* LaunchScreen.storyboard */,
 				D04DBB762A55FBC800D3C10A /* Info.plist */,
 				D04DBB6E2A55FBC700D3C10A /* PokemonGO.xcdatamodeld */,
+				D04DBB9B2A58490500D3C10A /* CoreDataPokemon.swift */,
+				D04DBB9D2A58774900D3C10A /* PokemonAnnotation.swift */,
 			);
 			path = PokemonGO;
 			sourceTree = "<group>";
@@ -128,6 +141,14 @@
 				D04DBB8B2A55FBC900D3C10A /* PokemonGOUITestsLaunchTests.swift */,
 			);
 			path = PokemonGOUITests;
+			sourceTree = "<group>";
+		};
+		D04DBB982A5737C000D3C10A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D04DBB992A5737C000D3C10A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +286,9 @@
 				D04DBB702A55FBC700D3C10A /* PokemonGO.xcdatamodeld in Sources */,
 				D04DBB662A55FBC700D3C10A /* AppDelegate.swift in Sources */,
 				D04DBB682A55FBC700D3C10A /* SceneDelegate.swift in Sources */,
+				D04DBBA02A5C793E00D3C10A /* PokeDexViewController.swift in Sources */,
+				D04DBB9E2A58774900D3C10A /* PokemonAnnotation.swift in Sources */,
+				D04DBB9C2A58490500D3C10A /* CoreDataPokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +468,7 @@
 				DEVELOPMENT_TEAM = 3LQN868D4M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokemonGO/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pokemon GO";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,6 +497,7 @@
 				DEVELOPMENT_TEAM = 3LQN868D4M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokemonGO/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pokemon GO";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
