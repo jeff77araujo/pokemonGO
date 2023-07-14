@@ -34,10 +34,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
-    @IBAction func openPokeDexButton(_ sender: Any) {
-        
-    }
-    
 }
 
 // MARK: - Funções Nativas
